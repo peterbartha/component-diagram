@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/ComponentTester/src" modelPluginID="ComponentTester"
+    modelName="ComponentModel" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>ComponentModel.ecore</foreignModel>
+  <genPackages prefix="Components" disposableProviderFactory="true" ecorePackage="ComponentModel.ecore#/">
+    <genClasses ecoreClass="ComponentModel.ecore#//Component">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ComponentModel.ecore#//Component/ports"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ComponentModel.ecore#//Component/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ComponentModel.ecore#//Component/components"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ComponentModel.ecore#//Component/connections"/>
+    </genClasses>
+    <genClasses ecoreClass="ComponentModel.ecore#//Port">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ComponentModel.ecore#//Port/name"/>
+    </genClasses>
+    <genClasses ecoreClass="ComponentModel.ecore#//Connection">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ComponentModel.ecore#//Connection/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ComponentModel.ecore#//Connection/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ComponentModel.ecore#//Connection/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,7 @@
+# Tracing options for the ComponentTester.diagram plug-in
+
+# Common issues
+ComponentTester.diagram/debug=false
+
+# Visual IDs
+ComponentTester.diagram/debug/visualID=false
